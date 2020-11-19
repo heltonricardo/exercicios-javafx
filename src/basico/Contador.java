@@ -17,14 +17,17 @@ public class Contador extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		
 		Label titulo = new Label("Contador");
-		Label btContador = new Label("0");
+		titulo.getStyleClass().add("titulo");
+		
+		Label lbContador = new Label("0");
+		lbContador.getStyleClass().add("numero");
 				
 		Button decremento = new Button("-");
-		decremento.setOnAction(e -> btContador
+		decremento.setOnAction(e -> lbContador
 				.setText(Integer.toString(--contador)));
 		
 		Button incremento = new Button("+");
-		incremento.setOnAction(e -> btContador
+		incremento.setOnAction(e -> lbContador
 				.setText(Integer.toString(++contador)));
 		
 		HBox boxBotoes = new HBox();
@@ -36,11 +39,18 @@ public class Contador extends Application {
 		VBox boxPrincipal = new VBox();
 		boxPrincipal.setSpacing(10);
 		boxPrincipal.setAlignment(Pos.CENTER);
+		boxPrincipal.getStyleClass().add("conteudo");
 		boxPrincipal.getChildren().add(titulo);
-		boxPrincipal.getChildren().add(btContador);
+		boxPrincipal.getChildren().add(lbContador);
 		boxPrincipal.getChildren().add(boxBotoes);
 		
+		String caminhoDoCss = getClass()
+				.getResource("/basico/Contador.css").toExternalForm();
+		
 		Scene cena = new Scene(boxPrincipal, 400, 400);
+		cena.getStylesheets()
+				.add("https://fonts.googleapis.com/css2?family=Oswald");
+		cena.getStylesheets().add(caminhoDoCss);
 		
 		primaryStage.setScene(cena);
 		primaryStage.show();
