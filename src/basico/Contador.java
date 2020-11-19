@@ -12,6 +12,25 @@ import javafx.stage.Stage;
 public class Contador extends Application {
 	
 	private int contador = 0;
+	
+	private void alteraContador(Label label, Operacao operacao) {
+		
+		if (operacao == Operacao.DECREMENTO)
+			label.setText(Integer.toString(--contador));
+		else
+			label.setText(Integer.toString(++contador));
+		
+		label.getStyleClass().remove("azul");
+		label.getStyleClass().remove("verde");
+		label.getStyleClass().remove("vermelha");
+		
+		if (contador < 0)
+			label.getStyleClass().add("vermelha");
+		else if (contador > 0)
+			label.getStyleClass().add("verde");
+		else
+			label.getStyleClass().add("azul");
+	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -21,14 +40,17 @@ public class Contador extends Application {
 		
 		Label lbContador = new Label("0");
 		lbContador.getStyleClass().add("numero");
+		lbContador.getStyleClass().add("azul");
 				
 		Button decremento = new Button("-");
-		decremento.setOnAction(e -> lbContador
-				.setText(Integer.toString(--contador)));
+		decremento.getStyleClass().add("botoes");
+		decremento.setOnAction(e ->
+				alteraContador(lbContador, Operacao.DECREMENTO));
 		
 		Button incremento = new Button("+");
-		incremento.setOnAction(e -> lbContador
-				.setText(Integer.toString(++contador)));
+		incremento.getStyleClass().add("botoes");
+		incremento.setOnAction(e ->
+				alteraContador(lbContador, Operacao.INCREMENTO));
 		
 		HBox boxBotoes = new HBox();
 		boxBotoes.setSpacing(10);
