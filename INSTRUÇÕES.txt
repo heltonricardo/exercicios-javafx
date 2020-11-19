@@ -16,7 +16,8 @@ Selecione todos os arquivos .jar que estão na pasta da biblioteca > lib
 Para cada uma das bibliotecas selecione: "Source attachmnet: (None)" > Edit
 > External Location > Encoding: UTF-8 > External File
 Selecione o arquivo src.zip que está na pasta da biblioteca > lib
-(o mesmo arquivo é usado para todas)
+(o mesmo arquivo é usado para todas). Fazemos isso para que tenhamos mais
+informações sobre as classes importadas, documentação e códigos fonte.
 
 ============================================================================
 
