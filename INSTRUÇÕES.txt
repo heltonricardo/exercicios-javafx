@@ -1,0 +1,27 @@
+CONFIGURANDO O AMBIENTE
+
+Baixe a biblioteca JavaFX - Latest Release:
+https://gluonhq.com/products/javafx/
+
+Nesse projeto foi usada a versão: JavaFX Windows SDK v15.0.1
+
+Descompacte e coloque a pasta em um diretório de sua preferência
+
+No Eclipse:
+Window > Preferences > Java > Build Path > User Libraries > New
+Insira um nome, exemplo: JavaFX15 > OK
+Selecione a bibliteca criada > Add Externals JARs
+Selecione todos os arquivos .jar que estão na pasta da biblioteca > lib
+
+Para cada uma das bibliotecas selecione: "Source attachmnet: (None)" > Edit
+> External Location > Encoding: UTF-8 > External File
+Selecione o arquivo src.zip que está na pasta da biblioteca > lib
+(o mesmo arquivo é usado para todas)
+
+============================================================================
+
+CONFIGURANDO O PROJETO
+
+Botão direito no projeto > Build Path > Configure Build Path > aba Libraries
+Selecione "modulepath" > Add Library... > User Library > Next
+Selecione a biblioteca criada no passo anterior > Finish > Apply and Close
