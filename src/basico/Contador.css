@@ -15,7 +15,7 @@
 
 .botoes {
 	-fx-background-color: white;
-	-fx-text-fill: #8080ff;
+	-fx-text-fill: black;
 	-fx-font-size: 28px;
 	-fx-min-width: 60px;
 	-fx-min-height: 60px;
