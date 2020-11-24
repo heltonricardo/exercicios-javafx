@@ -14,10 +14,11 @@ public class AppLayout extends Application {
 		
 		// Para testar um tipo de painel, comente as outras atribuições:
 
-		//raiz = new TesteAnchorPane();
-		//raiz = new TesteBorderPane();
-		//raiz = new TesteFlowPane();
-		raiz = new TesteGridPane();
+//		raiz = new TesteAnchorPane();
+//		raiz = new TesteBorderPane();
+//		raiz = new TesteFlowPane();
+//		raiz = new TesteGridPane();
+		raiz = new TesteStackPane();
 		
 		Scene principal = new Scene(raiz, 800, 600);
 		primaryStage.setScene(principal);
