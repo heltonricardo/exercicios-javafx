@@ -11,6 +11,8 @@ public class AppLayout extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		
 		Parent raiz = null;
+		
+		// Para testar um tipo de painel, comente as outras atribuições:
 
 		//raiz = new TesteAnchorPane();
 		//raiz = new TesteBorderPane();
