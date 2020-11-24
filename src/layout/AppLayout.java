@@ -13,7 +13,8 @@ public class AppLayout extends Application {
 		Parent raiz = null;
 
 		//raiz = new TesteAnchorPane();
-		raiz = new TesteBorderPane();
+		//raiz = new TesteBorderPane();
+		raiz = new TesteFlowPane();
 		
 		Scene principal = new Scene(raiz, 800, 600);
 		primaryStage.setScene(principal);
