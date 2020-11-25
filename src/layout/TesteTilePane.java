@@ -9,7 +9,7 @@ import javafx.geometry.Pos;
 import javafx.scene.layout.TilePane;
 
 /*
- * Tile pane é formada por um grid células de tamanho fixo, um componente
+ * O TilePane é formado por um grid de células de tamanho fixo: um componente
  * pequeno ocupará o mesmo espaço que um componente grande ocupa. 
  */
 
