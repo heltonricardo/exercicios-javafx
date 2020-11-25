@@ -2,6 +2,13 @@ package layout;
 
 import javafx.scene.layout.BorderPane;
 
+/*
+ * O BorderPane divide a cena em cinco regiões: superior, inferior, esquerda,
+ * direita e centro. Onde é possível ajustar os nós adicionados. Permite
+ * adicionar painéis diferentes em cada região, porém não é possível usar o
+ * mesmo painel mais de uma vez.
+ */
+
 public class TesteBorderPane extends BorderPane {
 
 	public TesteBorderPane() {
