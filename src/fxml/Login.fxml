@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+	 Nesse progeto, trabalharemos com MVC (model, view e controller). A view
+	 será definida dentro desse arquivo XML, O controller será classe Controle
+	 terá acesso aos elementos visuais aqui criados e terá métodos para
+	 contcolumnr a aplicação. O controller faz a ligação/interface da view com os
+	 models, que são as classes de negócios (outras classes da aplicação). 
+-->
+
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1">
+	
+	<Label text="Seja bem-vindo(a)!"
+		GridPane.rowIndex="0" GridPane.columnIndex="0"></Label>
+	
+	<Label text="E-mail: "
+		GridPane.rowIndex="1" GridPane.columnIndex="0"></Label>
+		
+	<TextField
+		GridPane.rowIndex="1" GridPane.columnIndex="1"></TextField>
+	
+	<Label text="Senha: "
+		GridPane.rowIndex="2" GridPane.columnIndex="0"></Label>
+		
+	<PasswordField
+		GridPane.rowIndex="2" GridPane.columnIndex="1"></PasswordField>
+	
+	<Button	text="Entrar"
+		GridPane.rowIndex="3" GridPane.columnIndex="0"></Button>
 	
 </GridPane>
 
