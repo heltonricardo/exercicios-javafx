@@ -1,5 +1,6 @@
 package layout;
 
+import javafx.application.Platform;
 import javafx.scene.layout.StackPane;
 
 /*
@@ -31,5 +32,33 @@ public class TesteStackPane extends StackPane {
 			else
 				getChildren().get(5).toBack();
 		});
+		
+		/*
+		 * Abaixo segue um código para que seja feita a transição entre as
+		 * layers automaticamente, a cada 3 segundos. Crimos uma thread FX
+		 * usando Thread + Platform para que o programa funcione. Dentro de um
+		 * laço (para que seja infinito o processo) usamos o sleep com 3 mil
+		 * mili segundos (3 segundos) para que tenha uma pausa durante as
+		 * transições. Devemos colocar o comando de transição dentro de um
+		 * Platform.runLater() para que funcione. O Thread.sleep exige que
+		 * tratemos a exceção, por isso o try-catch. Depois há o t.setDaemon()
+		 * para que a thread finalize quando fechamos a aplicação (importante):
+		 */
+		
+		Thread t = new Thread(() -> {
+			while (true) {
+				try {
+					Thread.sleep(3000);
+					Platform.runLater(() -> {
+						getChildren().get(0).toFront();
+					});
+				} catch (Exception e2) {
+					break;
+				}
+			}
+		});
+		
+		t.setDaemon(true);
+		t.start();
 	}
 }
