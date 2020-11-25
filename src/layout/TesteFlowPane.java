@@ -5,6 +5,11 @@ import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.layout.FlowPane;
 
+/*
+ * O FlowPane posiciona todos os nós, um após o outro, na ordem em que foram
+ * inseridos. É possível modificar a orientação e o alinhamento, por exemplo.
+ */
+
 public class TesteFlowPane extends FlowPane {
 
 	public TesteFlowPane() {
