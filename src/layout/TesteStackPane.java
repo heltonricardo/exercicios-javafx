@@ -4,13 +4,14 @@ import javafx.application.Platform;
 import javafx.scene.layout.StackPane;
 
 /*
- * Adicionando os elementos dessa maneira, o elemento c1 será o "fundo" da
- * pilha, e o c6 será o topo. Nessa pilha (que possui funcionamento semelhante
- * a uma lista) é possível enviar trocar as ordens dos elementos. O elemento do
- * topo é exibido em cima (com prioridade) sobre os demais. Quando usamos
- * get(0).toFront() o elemento do fundo da pilha é retirado e colocado em cima.
- * E quando usamos getChildren().get(5).toBack(), nesse caso, o elemento do
- * topo é retirado de sua posição e vai para o fundo da pilha.
+ * O StackPane permite adicionar os nós/layers uns sobre os outros. Adicionando
+ * os elementos dessa maneira, o elemento c1 será o "fundo" da pilha, e o c6
+ * será o topo. Nessa pilha (que possui funcionamento semelhante a uma lista) é
+ * possível enviar trocar as ordens dos elementos. O elemento do topo é exibido
+ * em cima (com prioridade) sobre os demais. Quando usamos get(0).toFront() o
+ * elemento do fundo da pilha é retirado e colocado em cima. E quando usamos
+ * getChildren().get(5).toBack(), nesse caso, o elemento do topo é retirado de
+ * sua posição e vai para o fundo da pilha.
  */
 
 public class TesteStackPane extends StackPane {
