@@ -5,7 +5,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 
 /*
- * Para adicionar os elementos, segue a ordem:
+ * O GridPane permite criar uma grade flexível onde é possível inserir um
+ * elemento em uma posição exata. Para adicionar os elementos, segue a ordem:
  * Coluna, Linha, Quantidade de colunas para ocupar, Quantidade de linhas para
  * ocupar (as quantidade devem ser maiores que zero). Se for ocupar somente uma
  * linha e uma coluna, utilize somente as posições, como feito em c4 e c6.
