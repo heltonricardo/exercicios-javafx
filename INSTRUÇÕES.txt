@@ -19,10 +19,18 @@ Selecione o arquivo src.zip que está na pasta da biblioteca > lib
 (o mesmo arquivo é usado para todas). Fazemos isso para que tenhamos mais
 informações sobre as classes importadas, documentação e códigos fonte.
 
-============================================================================
+===============================================================================
 
 CONFIGURANDO O PROJETO
 
 Botão direito no projeto > Build Path > Configure Build Path > aba Libraries
 Selecione "modulepath" > Add Library... > User Library > Next
 Selecione a biblioteca criada no passo anterior > Finish > Apply and Close
+
+===============================================================================
+
+INSTALANDO PLUGIN PARA AUXILIAR NA CRIAÇÃO DE ARQUIVOS FXML
+
+Help > Eclipse Marketplace... (aguarde carregar)
+Pesquiser por "fxml" (sem aspas)
+Instale o plugin e(fx)clipse (usei a versão 3.6.0) 
