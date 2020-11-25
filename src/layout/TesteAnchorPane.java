@@ -4,6 +4,11 @@ import javafx.geometry.Pos;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 
+/*
+ * O AnchorPane permite ancorar os elementos visuais a partir do topo, da
+ * esquerda, da direita e de baixo.
+ */
+
 public class TesteAnchorPane extends AnchorPane {
 
 	private static Double pixels = 100.0;
