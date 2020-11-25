@@ -33,4 +33,5 @@ INSTALANDO PLUGIN PARA AUXILIAR NA CRIAÇÃO DE ARQUIVOS FXML
 
 Help > Eclipse Marketplace... (aguarde carregar)
 Pesquiser por "fxml" (sem aspas)
-Instale o plugin e(fx)clipse (usei a versão 3.6.0) 
+Instale o plugin e(fx)clipse (usei a versão 3.6.0), aceitando os termos e
+clicando em Finish, depois reinicie o Eclipse.
