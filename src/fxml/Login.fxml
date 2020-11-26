@@ -11,7 +11,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<GridPane xmlns:fx="http://javafx.com/fxml/1">
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+		  fx:controller="fxml.LoginControlador">
 	
 	<Label text="Seja bem-vindo(a)!"
 		GridPane.rowIndex="0" GridPane.columnIndex="0"></Label>
@@ -19,17 +20,18 @@
 	<Label text="E-mail: "
 		GridPane.rowIndex="1" GridPane.columnIndex="0"></Label>
 		
-	<TextField
+	<TextField fx:id="campoEmail"
 		GridPane.rowIndex="1" GridPane.columnIndex="1"></TextField>
 	
 	<Label text="Senha: "
 		GridPane.rowIndex="2" GridPane.columnIndex="0"></Label>
 		
-	<PasswordField
+	<PasswordField fx:id="campoSenha"
 		GridPane.rowIndex="2" GridPane.columnIndex="1"></PasswordField>
 	
 	<Button	text="Entrar"
-		GridPane.rowIndex="3" GridPane.columnIndex="0"></Button>
+		GridPane.rowIndex="3" GridPane.columnIndex="0" onAction="#entrar">
+	</Button>
 	
 </GridPane>
 
