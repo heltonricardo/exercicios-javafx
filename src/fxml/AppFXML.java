@@ -14,9 +14,14 @@ public class AppFXML extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		
 		URL arquivoFXML = getClass().getResource("/fxml/Login.fxml");
+		
+		String arquivoCss = getClass()
+				.getResource("/fxml/Login.css").toExternalForm();
+		
 		GridPane raiz = FXMLLoader.load(arquivoFXML);
 		
 		Scene cena = new Scene(raiz, 350, 400);
+		cena.getStylesheets().add(arquivoCss);
 		
 		primaryStage.setTitle("Tela de Login");
 		primaryStage.setResizable(false);
