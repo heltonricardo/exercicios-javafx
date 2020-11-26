@@ -20,7 +20,7 @@ public class AppFXML extends Application {
 		
 		GridPane raiz = FXMLLoader.load(arquivoFXML);
 		
-		Scene cena = new Scene(raiz, 350, 400);
+		Scene cena = new Scene(raiz, 350, 350);
 		cena.getStylesheets().add(arquivoCss);
 		
 		primaryStage.setTitle("Tela de Login");
