@@ -18,7 +18,7 @@
   	styleClass="login" hgap="15" vgap="15">
   	
   	<padding>
-  		<Insets top="40" left="40" right="40"/>
+  		<Insets top="40" left="40" right="40" bottom="40"/>
   	</padding>
   	
   	<columnConstraints>
@@ -29,7 +29,11 @@
 	<Label text="Seja bem-vindo(a)!"
 		styleClass="login-titulo"
 		GridPane.rowIndex="0" GridPane.columnIndex="0"
-		GridPane.columnSpan="2" GridPane.halignment="CENTER"></Label>
+		GridPane.columnSpan="2" GridPane.halignment="CENTER">
+		<GridPane.margin>
+			<Insets top="20" bottom="20"/>
+		</GridPane.margin>
+	</Label>
 	
 	<Label text="E-mail:"
 		styleClass="login-form-label"
@@ -49,6 +53,9 @@
 		styleClass="login-botao"
 		GridPane.rowIndex="3" GridPane.columnIndex="0" onAction="#entrar"
 		GridPane.columnSpan="2" GridPane.halignment="CENTER">
+		<GridPane.margin>
+			<Insets top="20" bottom="20"/>
+		</GridPane.margin>
 	</Button>
 	
 </GridPane>
