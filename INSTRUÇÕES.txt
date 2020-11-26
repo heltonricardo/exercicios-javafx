@@ -35,3 +35,13 @@ Help > Eclipse Marketplace... (aguarde carregar)
 Pesquiser por "fxml" (sem aspas)
 Instale o plugin e(fx)clipse (usei a versão 3.6.0), aceitando os termos e
 clicando em Finish, depois reinicie o Eclipse.
+
+===============================================================================
+
+ADICIONANDO A BIBLIOTECA CONTROLSFX AO PROJETO
+Baixe em: https://mvnrepository.com/artifact/org.controlsfx/controlsfx
+(Nesse projeto foi usada a versão 11.0.3)
+Crie uma nova pasta dentro do projeto e adicione o arquivo baixado lá.
+Depois, dentro do Eclipse, clique com o botão direito no novo arquivo e
+selecione > Build Path > Add to Build Path. Depois solicite o uso dessa nova
+biblioteca no modeule-info do projeto através do requires.
